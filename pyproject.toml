@@ -1,0 +1,26 @@
+[project]
+name = "painterly"
+version = "0.0.1"
+description = "A physics-honest painting environment for tool-using AI artists"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pillow>=10.0",
+    "mcp>=1.2,<2",  # 2.x renamed FastMCP -> MCPServer; migrate deliberately later
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/painterly"]
+
+[tool.ruff]
+line-length = 100

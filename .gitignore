@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Practice sessions: the stroke logs + canvas fields are the local corpus
+# (hundreds of MB of float32 fields); the code and showcase images are shared.
+sessions/
+
+# Regenerable outputs
+output/
+
+# OS / editor
+.DS_Store
+*.swp
